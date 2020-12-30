@@ -25,12 +25,10 @@ import (builtins.fetchTarball {
   outputs = { self, nixpkgs, rust-analyzer-overlay }:
     let
       pkgs = import <nixpkgs> {
-        overlays = [ self.overlay ];
+        overlays = [ rust-analyzer-overlay.overlay ];
       };
     in {
-      overlay = final: prev: {
-        rust-analyzer = rust-analyzer-overlay.overlay;
-      };
+      # ...
     };
 }
 ```
