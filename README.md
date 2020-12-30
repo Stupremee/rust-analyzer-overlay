@@ -11,7 +11,7 @@ inside this directory and place the following inside:
 
 ```nix
 import (builtins.fetchTarball {
-  url = https://github.com/Stupremee/rust-analyzer-overlay/archive/master.tar.gz;
+  url = https://github.com/Stupremee/rust-analyzer-overlay/archive/main.tar.gz;
 })
 ```
 
